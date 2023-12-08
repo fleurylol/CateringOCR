@@ -1,12 +1,16 @@
 function processImage() {
   var fileInput = document.getElementById('fileInput');
   var resultDiv = document.getElementById('result');
-  var orderOutput = document.getElementById('order')
+  var orderOutput = document.getElementById('order');
   
   var tongTotal = document.getElementById('tong');
   var tongCount = 0;
   var spoonTotal = document.getElementById('spoon');
   var spoonCount = 0;
+  var utensilContainer = document.getElementById('utensilContainer');
+
+  var loadingBar = document.getElementById('loadingBar');
+  var loadingBarContainer = document.getElementById('loadingBarContainer');
 
   resultDiv.innerHTML = '';
   orderOutput.innerHTML = '';
@@ -16,11 +20,19 @@ function processImage() {
   var file = fileInput.files[0];
 
   if (file) {
+      loadingBar.style.width = '0%';
+      loadingBarContainer.style.display = 'block';
       // Perform OCR using Tesseract.js
       Tesseract.recognize(
           file,
           'eng', // Language code (you can change it based on your language)
-          { logger: info => console.log(info) } // Optional logger
+          { logger: ({ status, progress }) => {
+            // Update the loading bar based on OCR progress
+            if (status === 'recognizing text') {
+              loadingBar.style.width = Math.floor(progress * 100) + '%';
+            }
+          },
+        }
       ).then(({ data: { text } }) => {
           //Extract text between two keywords
             var startKeyword = "Guest:";
@@ -240,9 +252,11 @@ function processImage() {
                       break;
                   // Add more cases for additional keywords
               }
-          }
-            tongTotal.innerHTML = `<p>Tongs: ${tongCount}</p>`;
-            spoonTotal.innerHTML = `<p>Spoons: ${spoonCount}</p>`;
+          } 
+            utensilContainer.style.display = 'block';
+            tongTotal.innerHTML = `Tongs: ${tongCount}`;
+            spoonTotal.innerHTML = `Spoons: ${spoonCount}`;
+            loadingBarContainer.style.display = 'none';
       }).catch(error => {
           console.error(error);
           resultDiv.textContent = 'Error processing image';

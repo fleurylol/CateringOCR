@@ -15,15 +15,24 @@
         <a class="navbar-brand" href="#">Navbar</a>
     </div>
       </nav>
-    <!-- Needs heic to png and crop before process -->
-<div class="container">
-    <input type="file" id="fileInput" accept="image/*">
-    <button onclick="processImage()">Process Image</button>
+<div class="container margin">
+    <div class="heading">
+        <input type="file" id="fileInput" accept="image/*" class="">
+        <button class="btn btn-secondary" onclick="processImage()">Process Image</button>
+    </div>
+    <div id="loadingBarContainer">
+        <div id="loadingBar"></div>
+    </div>
     <div id="order"></div>
+    
     <hr>
-    <div id="result" class="packcontainer"></div>
-    <div id='tong'></div>
-    <div id="spoon"></div>
+    <div id="result" class="packcontainer">Scan a receipt</div>
+    <div id="utensilContainer">
+        <div class="heading">
+            <div id='tong' class="utensil"></div>
+            <div id="spoon" class="utensil"></div>
+        </div>
+    </div>
 </div>
 <script src="index.js"></script>
 </body>
