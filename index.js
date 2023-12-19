@@ -32,6 +32,8 @@ function processImage() {
               loadingBar.style.width = Math.floor(progress * 100) + '%';
             }
           },
+          tessedit_load_system_dawg: '0',
+          load_freq_dawg: '0'
         }
       ).then(({ data: { text } }) => {
           //Extract text between two keywords
