@@ -20,9 +20,16 @@
         </div>
       </nav>
 <div class="container-fluid table-margin" style="margin-top: 20px;">
-<table class="table table-bordered">
+<div class="pageNav">
+  <a href="#hotTrays">Hot</a>
+  <a href="#coldTrays">Cold</a>
+  <a href="#ckBrwnTrays">Cookie & Brownies</a>
+  <a href="#dryGoods">Other</a>
+</div>
+<!--HOT TRAYS-->
+<table class="table table-borderless">
     <th colspan="3">
-        Hot Trays
+        <h2 id="hotTrays">Hot Trays</h2>
     </th>
     <tr>
         <td class="trayImg">
@@ -45,14 +52,65 @@
       </td>
       <td class="trayImg">
         <img class="responsive" onclick="openModal('miniTray')" src="https://www.cfacdn.com/img/order/menu/Online/Trays/minisTray_sm_PDP.png">
-        <p>Chick-n-Mini Trays</p>
+        <p>Chick-n-Mini</p>
       </td>
     </tr>
+</table>
+<!--COLD TRAYS-->
+<table class="table table-borderless">
+  <th colspan="3">
+      <h2 id="coldTrays">Cold Trays</h2>
+      <hr>
+  </th>
+  <tr>
+      <td class="trayImg">
+          <img class="responsive" onclick="openModal('kaleTray');" src="https://www.cfacdn.com/img/order/menu/Online/Trays/kaleCrunchTray_sm_pdp.png">
+          <p>Kale Crunch</p>
+      </td>
+      <td class="trayImg">
+          <img class="responsive" onclick="openModal('fruitTray');" src="https://www.cfacdn.com/img/order/menu/Mobile/Trays/030719_FruitTray_Large_Product_LowAngle_0960_1200x1200.png">
+          <p>Fruit</p>
+      </td>
+      <td class="trayImg">
+          <img class="responsive" onclick="openModal('saladTray');" src="https://www.cfacdn.com/img/order/menu/Online/Trays/saladTraySmall_PDP.png">
+          <p>Salad</p>
+      </td>
+  </tr>
+  <tr>
+    <td class="trayImg">
+      <img class="responsive" onclick="openModal('wrapTray')" src="https://www.cfacdn.com/img/order/menu/Online/Trays/wrapTraySmall_PDP.png">
+      <p>Wraps</p>
+    </td>
+    <td class="trayImg">
+      <img class="responsive" onclick="openModal('grilledTray')" src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Catering/Catering%20PDP/_0002sPDP-Chilled-Chicken-Sub-Tray.png">
+      <p>Chilled Grilled Trays</p>
+    </td>
+  </tr>
+</table>
+<table class="table table-borderless">
+  <th colspan="3">
+      <h2 id="ckBrwnTrays">Cookie & Brownie Trays</h2>
+      <hr>
+  </th>
+  <tr>
+      <td class="trayImg">
+          <img class="responsive" onclick="openModal('cookieTray');" src="https://www.cfacdn.com/img/order/menu/Online/Trays/cookieTraySmall_PDP.png">
+          <p>Cookies</p>
+      </td>
+      <td class="trayImg">
+          <img class="responsive" onclick="openModal('brownieTray');" src="https://www.cfacdn.com/img/order/menu/Online/Trays/BrowniesTray_pdp.png">
+          <p>Brownies</p>
+      </td>
+      <td class="trayImg">
+          <img class="responsive" onclick="openModal('cookieBrownieTray');" src="https://www.cfacdn.com/img/order/menu/Online/Trays/BrownieCookieTray_pdp.png">
+          <p>Cookie/Brownie Trays</p>
+      </td>
+  </tr>
 </table>
 </div>
 
 
-<!-- The Modals -->
+<!-- Hot Tray Modals -->
 <div id="nuggetTray" class="trayModal">
     <div class="trayContent">
       <span class="close" onclick="closeModal('nuggetTray')">&times;</span>
@@ -83,6 +141,7 @@
             <td>2 8oz Sauce</td>
         </tr>
       </table>
+      <p>Chilled Nugget Trays are identical</p>
     </div>
     </div>
     </div>
@@ -117,6 +176,7 @@
             <td>2 8oz Sauce</td>
         </tr>
       </table>
+      <p>Chilled Strips Trays are identical</p>
     </div>
     </div>
     </div>
@@ -142,8 +202,8 @@
         </div>
        </div>
       </div>
-    </div>
-    <div id="bundle" class="trayModal">
+  </div>
+  <div id="bundle" class="trayModal">
       <div class="trayContent">
         <span class="close" onclick="closeModal('bundle')">&times;</span>
         <div class="row">
@@ -175,8 +235,8 @@
           </div>
          </div>
         </div>
-      </div>
-      <div id="miniTray" class="trayModal">
+  </div>
+  <div id="miniTray" class="trayModal">
         <div class="trayContent">
           <span class="close" onclick="closeModal('miniTray')">&times;</span>
           <div class="row">
@@ -201,7 +261,238 @@
         </div>
         </div>
         </div>
+  </div>
+<!--Cold Tray Modals-->
+<div id="kaleTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('kaleTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Online/Trays/kaleCrunchTray_sm_pdp.png">
       </div>
+      <div class="col-8">
+    <h3>Kale Crunch Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Large 14"</th>
+      <tr>
+          <td>10<img class="personicon" src="assets/group.png"></td>
+          <td>20<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>10 Roasted Almonds</td>
+          <td>20 Roasted Almonds</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="fruitTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('fruitTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Mobile/Trays/030719_FruitTray_Large_Product_LowAngle_0960_1200x1200.png">
+      </div>
+      <div class="col-8">
+    <h3>Fruit Trays - 1 Spoon</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Large 14"</th>
+      <tr>
+          <td>12<img class="personicon" src="assets/group.png"></td>
+          <td>26<img class="personicon" src="assets/group.png"></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="saladTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('saladTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Online/Trays/saladTraySmall_PDP.png">
+      </div>
+      <div class="col-8">
+    <h3>Salad Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Large 14"</th>
+      <tr>
+          <td>5<img class="personicon" src="assets/group.png"></td>
+          <td>10<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>
+            <p>Dressing Assortment:</p>
+            <img class="responsive" src="https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/catering-4l7tgp/assets/qzojloqfjiko/small.png">
+          </td>
+          <td>
+            <p>Dressing Assortment:</p>
+            <img class="responsive" src="https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/catering-4l7tgp/assets/4wrvmnbljbhs/large_tray.png">
+          </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="wrapTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('wrapTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Online/Trays/wrapTraySmall_PDP.png">
+      </div>
+      <div class="col-8">
+    <h3>Wrap Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Medium 14"</th>
+      <th>Large 16"</th>
+      <tr>
+          <td>6<img class="personicon" src="assets/group.png"></td>
+          <td>10<img class="personicon" src="assets/group.png"></td>
+          <td>14<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>6 Wrap Halves</td>
+          <td>10 Wrap Halves</td>
+          <td>14 Wrap Halves</td>
+      </tr>
+      <tr>
+          <td>3 Dressings</td>
+          <td>5 Dressings</td>
+          <td>7 Dressings</td>
+      </tr>
+    </table>
+    <p>Spicy wraps & Veggie wraps are identical</p>
+    <p>If guest doesn't specify dressings, include Avocado Lime Ranch.</p>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="grilledTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('grilledTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Catering/Catering%20PDP/_0002sPDP-Chilled-Chicken-Sub-Tray.png">
+      </div>
+      <div class="col-8">
+    <h3>Chilled Grilled Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Medium 14"</th>
+      <th>Large 16"</th>
+      <tr>
+          <td>6<img class="personicon" src="assets/group.png"></td>
+          <td>10<img class="personicon" src="assets/group.png"></td>
+          <td>14<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>6 Sandwich Halves</td>
+          <td>10 Sandwich Halves</td>
+          <td>14 Sandwich Halves</td>
+      </tr>
+      <tr>
+          <td>6 Honey Roasted BBQ</td>
+          <td>12 Honey Roasted BBQ</td>
+          <td>14 Honey Roasted BBQ</td>
+      </tr>
+    </table>
+    <p>Spicy grilled trays are identical</p>
+  </div>
+  </div>
+  </div>
+</div>
+<!--Dry Tray and Goods Modals-->
+<div id="cookieTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('cookieTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Online/Trays/cookieTraySmall_PDP.png">
+      </div>
+      <div class="col-8">
+    <h3>Cookie Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Large 14"</th>
+      <tr>
+          <td>12<img class="personicon" src="assets/group.png"></td>
+          <td>24<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>12 Cookies</td>
+          <td>24 Cookies</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="brownieTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('brownieTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Online/Trays/BrowniesTray_pdp.png">
+      </div>
+      <div class="col-8">
+    <h3>Brownie Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Large 14"</th>
+      <tr>
+          <td>12<img class="personicon" src="assets/group.png"></td>
+          <td>24<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>12 Brownies</td>
+          <td>24 Brownies</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="cookieBrownieTray" class="trayModal">
+  <div class="trayContent">
+    <span class="close" onclick="closeModal('cookieBrownieTray')">&times;</span>
+    <div class="row">
+      <div class="col-4 moblieImg">
+          <img class="responsive" src="https://www.cfacdn.com/img/order/menu/Online/Trays/BrownieCookieTray_pdp.png">
+      </div>
+      <div class="col-8">
+    <h3>Cookie/Brownie Trays - 1 Tong</h3>
+    <hr>
+    <table class="table table-bordered trayInfo">
+      <th>Small 10"</th>
+      <th>Large 14"</th>
+      <tr>
+          <td>12<img class="personicon" src="assets/group.png"></td>
+          <td>24<img class="personicon" src="assets/group.png"></td>
+      </tr>
+      <tr>
+          <td>6 Cookies & 6 Brownies</td>
+          <td>12 Cookies & 12 Brownies</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
