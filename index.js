@@ -21,3 +21,53 @@ function closeModal(modalId) {
     }
   });
 }
+
+cutleryKit = false;
+cups = false;
+let mintWipe = 0;
+
+function dryPack (){
+  mintWipe = 0;
+  document.getElementById("kits").style.display = "none";
+  document.getElementById("napkins").style.display = "none";
+  document.getElementById("cups").style.display = "none";
+  document.getElementById("result").style.display = "block";
+  let userInput = document.getElementById("guestCount").value;
+  let guestCount = parseInt(userInput, 10);
+  document.getElementById("packCount").innerHTML = guestCount;
+  if(guestCount < 25){
+    mintWipe = 1
+    document.getElementById("mintWipe").innerHTML = mintWipe;
+  } else{
+  mintWipe += Math.floor(guestCount / 25);
+  document.getElementById("mintWipe").innerHTML = mintWipe;
+  }
+
+  if(cutleryKit == true){
+    let cutleryCount = guestCount;
+    document.getElementById("kits").style.display = "inline-flex";
+    console.log(`${cutleryCount} Cutlery Kits`);
+  } else{
+    document.getElementById("napkins").style.display = "inline-flex";
+  }
+
+  if(cups == true){
+    let cupCount = guestCount;
+    document.getElementById("cups").style.display = "inline-flex";
+    console.log(`${cupCount} Cups`)
+  }
+
+
+
+  
+}
+
+function trayYes(){
+  cutleryKit = !cutleryKit;
+  console.log(cutleryKit);
+  }
+
+  function gallonYes(){
+    cups = !cups;
+    console.log(cups);
+  }
