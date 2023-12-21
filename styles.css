@@ -118,8 +118,11 @@
     .moblieImg {
       display: none;
     }
+    .pageNav a{
+      padding-right: 2%;
+    }
   }
-
+  
   .dryContainer{
     border: solid black 1px;
     margin-right: 10px;
