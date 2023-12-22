@@ -95,23 +95,9 @@
     list-style-type:none;
     padding-left: -10px;
   }
-  .pageNav{
-    text-align: center;
-    vertical-align: middle;
-    margin: auto;
-    border-bottom: #787878 solid;
-    width: 85%;
-    padding-top: 5%;
-  }
-  .pageNav a {
-    text-decoration: none;
-    font-size: large;
-    padding-right: 10%;
-    color: #E60E33;
-  }
 
   #hotTrays{
-    padding-top: 50px;
+    padding-top: 25px;
   }
 
   @media (max-width:600px){
@@ -145,4 +131,56 @@
 
   h2{
     text-decoration: underline;
+  }
+
+  .topNav{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .botNav{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  #hotNav{
+  background-color: rgb(255, 71, 71);
+  }
+  #coldNav{
+    background-color: #1988f7;
+  }
+  #cookieBrownieNav{
+    background-color: rgb(80, 57, 57);
+  }
+  
+  #dryGoodLink{
+    background-color: rgb(79, 73, 73);
+  }
+
+  #boxMealLink{
+    background-color: rgb(79, 73, 73);
+  }
+
+  .pageNav a{
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin: 3px;
+  color: white;
+  }
+
+  .title{
+    font-size: larger;
+  }
+
+  .boxMealContent p {
+    margin: 0px;
+    text-decoration: underline;
+  }
+
+  .boxMealContent{
+    margin-bottom: 20px;
   }

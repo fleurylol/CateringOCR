@@ -21,10 +21,15 @@
       </nav>
 <div class="container-fluid table-margin" style="margin-top: 20px;">
 <div class="pageNav">
-  <a href="#hotTrays">Hot</a>
-  <a href="#coldTrays">Cold</a>
-  <a href="#ckBrwnTrays">Cookie & Brownies</a>
-  <a href="#" onclick="openModal('dryGoods')">Other</a>
+<div class="topNav">
+  <a href="#hotTrays" id="hotNav">Hot</a>
+  <a href="#coldTrays" id="coldNav">Cold</a>
+  <a href="#ckBrwnTrays" id="cookieBrownieNav">Cookie & Brownies</a>
+</div>
+<div class="botNav">
+  <a href="#" id="dryGoodLink" onclick="openModal('dryGoods')">Dry Goods</a>
+  <a href="#" id="boxMealLink" onclick="openModal('boxMeals')">Box Meals</a>
+</div>
 </div>
 <!--HOT TRAYS-->
 <table class="table table-borderless">
@@ -481,7 +486,7 @@
 <div id="dryGoods" class="trayModal">
   <div class="trayContent">
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col">
         <div class="dryContainer">
           <h4>Dry Goods</h4>
           Guest Count: <input id="guestCount">
@@ -510,21 +515,41 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <div class="dryContainer">
-          <h4>Box Meals</h4>
-           All box meals with include:
-           <ul>
-            <li>Entree</li>
-            <li>Brownie/Cookie(or both)</li>
-            <li>Napkin</li>
-            <li>Mint</li>
-            <li>Wipe</li>
-            <li>Chips</li>
-           </ul>
-        </div>
+    </div>
+  </div>
+</div>
+<div id="boxMeals" class="trayModal">
+  <div class="trayContent">
+    <h3>Box Meals</h3>
+    <div class="boxMealContent">
+      <p>What is always included:</p>
+      <li>Chips, a mint, a wipe, and a napkin</li>
+      <li>Cookie or Brownie</li>
+   </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+    <span class="title"><b>Entrees: </b></span>
+    <div class="boxMealContent">
+      <p>Original & Spicy Sandwich</p>
+      <li>1 Mayo, 1 CFA Sauce</li>
+      <p>Nuggets</p>
+      <li>1 CFA Sauce</li>
+      <p>Chilled Grilled Sandwich</p>
+      <li>1 Honey Roasted BBQ, 1 Mayo</li>
+      <p>Grilled Wrap</p>
+      <li>1 Dressing pack</li>
+    </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <span class="title"><b>Sides: </b></span>
+      <div class="boxMealContent">
+        <p>Fruit Cup</p>
+        <li>1 Fork</li>
+        <p>Kale Crunch</p>
+        <li>1 Fork & 1 pack of roasted almonds</li>
       </div>
     </div>
+  </div>
   </div>
 </div>
 <script src="index.js"></script>
