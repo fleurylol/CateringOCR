@@ -1,168 +1,170 @@
-.packcontainer{
-    background-color: rgb(216, 216, 216);
-    padding: 5px;
-    border: solid 1px black;
-    border-radius: 10px;
+.packcontainer {
+  background-color: rgb(216, 216, 216);
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 10px;
 }
 
-.margin{
-    padding-top: 10px;
+.margin {
+  padding-top: 10px;
 }
 
-.heading{
-    display: flex;
+.heading {
+  display: flex;
 }
 
-.utensil{
-    border: 2px solid #787878;
-    border-radius: 10px;
-    text-align: center;
-    width: fit-content;
-    padding: 5px;
-    margin-right: 5px;
+.utensil {
+  border: 2px solid #787878;
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  padding: 5px;
+  margin-right: 5px;
 }
-#utensilContainer{
-    margin-top: 5px;
-    display: none;
+#utensilContainer {
+  margin-top: 5px;
+  display: none;
 }
 
 #loadingBarContainer {
-    width: 100%;
-    height: 20px;
-    border: 1px solid #ccc;
-    display: none; /* Initially hide the loading bar container */
-  }
+  width: 100%;
+  height: 20px;
+  border: 1px solid #ccc;
+  display: none; /* Initially hide the loading bar container */
+}
 
-  #loadingBar {
-    height: 100%;
-    background-color: #4caf50;
-  }
+#loadingBar {
+  height: 100%;
+  background-color: #4caf50;
+}
 
-
-  /* The Modal (background) */
+/* The Modal (background) */
 .trayModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .trayContent {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 85%; /* Could be more or less, depending on screen size */
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
 
-  .responsive {
-    max-width: 100%;
-    height: auto;
-  }
+/* Modal Content/Box */
+.trayContent {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85%; /* Could be more or less, depending on screen size */
+}
 
-  td img {
-    width: 200px;
-    height: 200px;
-  }
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
 
-  .personicon{
-    height: 25px;
-    width: 25px;
-  }
+td img {
+  width: 200px;
+  height: 200px;
+}
 
-  .trayImg{
-      text-align: center; 
-      vertical-align: middle;
-      height: auto;
-      width: auto;
-  }
-  .trayInfo{
-    text-align: center;
-  }
+.personicon {
+  height: 25px;
+  width: 25px;
+}
 
-  .table-margin{
-    max-width: 750px;
-  }
+.trayImg {
+  text-align: center;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+}
+.trayInfo {
+  text-align: center;
+}
 
-  .grilledList{
-    list-style-type:none;
-    padding-left: -10px;
-  }
+.table-margin {
+  max-width: 750px;
+}
 
-  #hotTrays{
-    padding-top: 25px;
-  }
+.grilledList {
+  list-style-type: none;
+  padding-left: -10px;
+}
 
-  @media (max-width:600px){
-    .moblieImg {
-      display: none;
-    }
-    .pageNav a{
-      padding-right: 2%;
-    }
-  }
-  
-  .dryContainer{
-    border: solid black 1px;
-    margin-right: 10px;
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-  }
+#hotTrays {
+  padding-top: 25px;
+}
 
-  .testClass td {
-    padding-left: 15px;
-  }
-
-  #guestCount{
-    width: 75px;
-  }
-
-  #result, #cups, #kits, #napkins{
+@media (max-width: 600px) {
+  .moblieImg {
     display: none;
   }
-
-  h2{
-    text-decoration: underline;
+  .pageNav a {
+    padding-right: 2%;
   }
+}
 
-  .topNav{
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-  }
+.dryContainer {
+  border: solid black 1px;
+  margin-right: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
 
-  .botNav{
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  #hotNav{
+.testClass td {
+  padding-left: 15px;
+}
+
+#guestCount {
+  width: 75px;
+}
+
+#result,
+#cups,
+#kits,
+#napkins {
+  display: none;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.topNav {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.botNav {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#hotNav {
   background-color: rgb(255, 71, 71);
-  }
-  #coldNav{
-    background-color: #1988f7;
-  }
-  #cookieBrownieNav{
-    background-color: rgb(80, 57, 57);
-  }
-  
-  #dryGoodLink{
-    background-color: rgb(79, 73, 73);
-  }
+}
+#coldNav {
+  background-color: #1988f7;
+}
+#cookieBrownieNav {
+  background-color: rgb(80, 57, 57);
+}
 
-  #boxMealLink{
-    background-color: rgb(79, 73, 73);
-  }
+#dryGoodLink {
+  background-color: rgb(79, 73, 73);
+}
 
-  .pageNav a{
+#boxMealLink {
+  background-color: rgb(79, 73, 73);
+}
+
+.pageNav a {
   font-size: 18px;
   display: inline-block;
   box-sizing: border-box;
@@ -170,17 +172,17 @@
   border-radius: 5px;
   margin: 3px;
   color: white;
-  }
+}
 
-  .title{
-    font-size: larger;
-  }
+.title {
+  font-size: larger;
+}
 
-  .boxMealContent p {
-    margin: 0px;
-    text-decoration: underline;
-  }
+.boxMealContent p {
+  margin: 0px;
+  text-decoration: underline;
+}
 
-  .boxMealContent{
-    margin-bottom: 20px;
-  }
+.boxMealContent {
+  margin-bottom: 20px;
+}

@@ -3,7 +3,7 @@ function openModal(modalId) {
   modal.style.display = "block";
 
   // Add an event listener to the document body to close the modal when clicking outside of it
-  document.body.addEventListener('click', function(event) {
+  document.body.addEventListener("click", function (event) {
     if (event.target === modal) {
       closeModal(modalId);
     }
@@ -15,7 +15,7 @@ function closeModal(modalId) {
   modal.style.display = "none";
 
   // Remove the event listener when the modal is closed
-  document.body.removeEventListener('click', function(event) {
+  document.body.removeEventListener("click", function (event) {
     if (event.target === modal) {
       closeModal(modalId);
     }
@@ -26,7 +26,7 @@ cutleryKit = false;
 cups = false;
 let mintWipe = 0;
 
-function dryPack (){
+function dryPack() {
   mintWipe = 0;
   document.getElementById("kits").style.display = "none";
   document.getElementById("napkins").style.display = "none";
@@ -35,39 +35,35 @@ function dryPack (){
   let userInput = document.getElementById("guestCount").value;
   let guestCount = parseInt(userInput, 10);
   document.getElementById("packCount").innerHTML = guestCount;
-  if(guestCount < 25){
-    mintWipe = 1
+  if (guestCount < 25) {
+    mintWipe = 1;
     document.getElementById("mintWipe").innerHTML = mintWipe;
-  } else{
-  mintWipe += Math.floor(guestCount / 25);
-  document.getElementById("mintWipe").innerHTML = mintWipe;
+  } else {
+    mintWipe += Math.floor(guestCount / 25);
+    document.getElementById("mintWipe").innerHTML = mintWipe;
   }
 
-  if(cutleryKit == true){
+  if (cutleryKit == true) {
     let cutleryCount = guestCount;
     document.getElementById("kits").style.display = "inline-flex";
     console.log(`${cutleryCount} Cutlery Kits`);
-  } else{
+  } else {
     document.getElementById("napkins").style.display = "inline-flex";
   }
 
-  if(cups == true){
+  if (cups == true) {
     let cupCount = guestCount;
     document.getElementById("cups").style.display = "inline-flex";
-    console.log(`${cupCount} Cups`)
+    console.log(`${cupCount} Cups`);
   }
-
-
-
-  
 }
 
-function trayYes(){
+function trayYes() {
   cutleryKit = !cutleryKit;
   console.log(cutleryKit);
-  }
+}
 
-  function gallonYes(){
-    cups = !cups;
-    console.log(cups);
-  }
+function gallonYes() {
+  cups = !cups;
+  console.log(cups);
+}
