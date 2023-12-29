@@ -35,35 +35,29 @@ function dryPack() {
   let userInput = document.getElementById("guestCount").value;
   let guestCount = parseInt(userInput, 10);
   document.getElementById("packCount").innerHTML = guestCount;
-  if (guestCount < 25) {
-    mintWipe = 1;
-    document.getElementById("mintWipe").innerHTML = mintWipe;
-  } else {
-    mintWipe += Math.floor(guestCount / 25);
-    document.getElementById("mintWipe").innerHTML = mintWipe;
-  }
+  console.log(guestCount);
+  let mintWipe = Math.floor(guestCount / 25) + (guestCount % 25 > 0 ? 1 : 0);
+  document.getElementById("mintWipe").innerHTML = Math.floor(mintWipe);
+}
 
-  if (cutleryKit == true) {
-    let cutleryCount = guestCount;
-    document.getElementById("kits").style.display = "inline-flex";
-    console.log(`${cutleryCount} Cutlery Kits`);
-  } else {
-    document.getElementById("napkins").style.display = "inline-flex";
-  }
+if (cutleryKit == true) {
+  let cutleryCount = guestCount;
+  document.getElementById("kits").style.display = "inline-flex";
+  console.log(`${cutleryCount} Cutlery Kits`);
+} else {
+  document.getElementById("napkins").style.display = "inline-flex";
+}
 
-  if (cups == true) {
-    let cupCount = guestCount;
-    document.getElementById("cups").style.display = "inline-flex";
-    console.log(`${cupCount} Cups`);
-  }
+if (cups == true) {
+  let cupCount = guestCount;
+  document.getElementById("cups").style.display = "inline-flex";
+  console.log(`${cupCount} Cups`);
 }
 
 function trayYes() {
   cutleryKit = !cutleryKit;
-  console.log(cutleryKit);
 }
 
 function gallonYes() {
   cups = !cups;
-  console.log(cups);
 }
